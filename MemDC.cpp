@@ -18,6 +18,7 @@
 
 #ifdef _DEBUG
 
+/*
 #include "ximage.h"
 #pragma comment(lib, "cximage")
 #pragma comment(lib, "jasper")
@@ -25,6 +26,7 @@
 #pragma comment(lib, "jpeg")
 #pragma comment(lib, "tiff")
 #pragma comment(lib, "zlib")
+*/
 
 #endif
 
@@ -265,6 +267,7 @@ BOOL MemDC::RotateGdiplus( double angle, MemDC * pMemDC )
 }
 
 #ifdef _DEBUG
+/*
 BOOL MemDC::RotateCxImage( double angle, MemDC * pMemDC )
 {
 	CxImage img;
@@ -288,7 +291,7 @@ BOOL MemDC::RotateCxImage( double angle, MemDC * pMemDC )
 	img.Draw2(*pMemDC);
 
 	return TRUE;
-}
+}*/
 #endif
 
 BOOL MemDC::StretchBlt( HDC hDestDC, int xDest, int yDest, int nDestWidth, int nDestHeight, int x, int y, int width, int height, int nMode /*= HALFTONE */ ) const

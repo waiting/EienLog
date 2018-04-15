@@ -1,6 +1,10 @@
 Debug/
 Release/
+ipch/
 *.opt
 *.ncb
 *.aps
 *.plg
+*.opensdf
+*.sdf
+*.suo

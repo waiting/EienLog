@@ -231,6 +231,7 @@ LocalString UnicodeToLocal( UnicodeString const & strUnicode )
 {
 	LocalString str;
 	UINT uLength = UnicodeMinLength( strUnicode.c_str() );
+    if ( uLength < 1 ) return str;
 	str.resize(uLength);
 	WideCharToMultiByte(
 		CP_ACP,
@@ -249,6 +250,7 @@ UnicodeString LocalToUnicode( LocalString const & strLocal )
 {
 	UnicodeString str;
 	UINT uCount = LocalCharsCount( strLocal.c_str() );
+    if ( uCount < 1 ) return str;
 	str.resize(uCount);
 	MultiByteToWideChar(
 		CP_ACP,

@@ -12,33 +12,33 @@
 
 class CDetailLogDlg : public ModelessDialog
 {
-// Construction
+    // Construction
 public:
-	//CDetailLogDlg(CWnd* pParent = NULL);   // standard constructor
-	CDetailLogDlg();
-// Dialog Data
-	//{{AFX_DATA(CDetailLogDlg)
-	enum { IDD = IDD_DETAILLOG_DIALOG };
-		// NOTE: the ClassWizard will add data members here
-	//}}AFX_DATA
+    //CDetailLogDlg(CWnd* pParent = NULL);   // standard constructor
+    CDetailLogDlg();
+    // Dialog Data
+    //{{AFX_DATA(CDetailLogDlg)
+    enum { IDD = IDD_DETAILLOG_DIALOG };
+    // NOTE: the ClassWizard will add data members here
+    //}}AFX_DATA
 
-	void SetLog( String const & strLog );
-// Overrides
-	// ClassWizard generated virtual function overrides
-	//{{AFX_VIRTUAL(CDetailLogDlg)
-	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
-	virtual BOOL OnInitDialog();
-	//}}AFX_VIRTUAL
-
-// Implementation
+    void SetLog( String const & strLog );
+    // Overrides
+    // ClassWizard generated virtual function overrides
+    //{{AFX_VIRTUAL(CDetailLogDlg)
 protected:
-	CRichEditCtrl _RichEdit;
-	// Generated message map functions
-	//{{AFX_MSG(CDetailLogDlg)
-	afx_msg void OnSize(UINT nType, int cx, int cy);
-	//}}AFX_MSG
-	DECLARE_MESSAGE_MAP()
+    virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV support
+    virtual BOOL OnInitDialog();
+    //}}AFX_VIRTUAL
+
+    // Implementation
+protected:
+    CRichEditCtrl _RichEdit;
+    // Generated message map functions
+    //{{AFX_MSG(CDetailLogDlg)
+    afx_msg void OnSize(UINT nType, int cx, int cy);
+    //}}AFX_MSG
+    DECLARE_MESSAGE_MAP()
 };
 
 //{{AFX_INSERT_LOCATION}}

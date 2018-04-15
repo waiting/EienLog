@@ -20,7 +20,7 @@
 
 ModelessDialog::ModelessDialog() : _bAutoDelete(TRUE)
 {
-	
+
 }
 
 ModelessDialog::~ModelessDialog()
@@ -29,27 +29,27 @@ ModelessDialog::~ModelessDialog()
 
 void ModelessDialog::PostNcDestroy()
 {
-	if ( _bAutoDelete )
-	{
-		delete this;
-	}
+    if ( _bAutoDelete )
+    {
+        delete this;
+    }
 }
 
 void ModelessDialog::OnOK()
 {
-	CDialog::OnOK();
-	_bAutoDelete && DestroyWindow();
+    CDialog::OnOK();
+    _bAutoDelete && DestroyWindow();
 }
 
 void ModelessDialog::OnCancel()
 {
-	CDialog::OnCancel();
-	_bAutoDelete && DestroyWindow();
+    CDialog::OnCancel();
+    _bAutoDelete && DestroyWindow();
 }
 
 BEGIN_MESSAGE_MAP(ModelessDialog, CDialog)
-	//{{AFX_MSG_MAP(ModelessDialog)
-	//}}AFX_MSG_MAP
+    //{{AFX_MSG_MAP(ModelessDialog)
+    //}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
 

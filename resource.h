@@ -1,5 +1,5 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Developer Studio generated include file.
+// Microsoft Visual C++ generated include file.
 // Used by EienLog.rc
 //
 #define IDS_STRING_INIFILE              1
@@ -11,6 +11,7 @@
 #define IDD_SETTINGS_DIALOG             103
 #define IDD_DETAILLOG_DIALOG            104
 #define IDR_PNG_LOGSMALL                105
+#define IDR_MENU_MAIN                   106
 #define IDC_LIST_LOGS                   1000
 #define IDC_CHECK_SHOWDETAIL            1001
 #define IDC_EDIT_SHOW_COUNT             1002
@@ -27,8 +28,8 @@
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        106
-#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_RESOURCE_VALUE        107
+#define _APS_NEXT_COMMAND_VALUE         32775
 #define _APS_NEXT_CONTROL_VALUE         1011
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
